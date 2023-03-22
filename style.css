@@ -29,8 +29,8 @@ p,h1 {
   background-color: whitesmoke;
   max-height: 80%;
   max-width: 60%; 
-  border: 2px solid #84bb0c;
-  border-radius: 6px;
+  border: solid ;
+  border-radius: 8px;
   padding: 10px;
 }
 .card-header {
@@ -40,9 +40,11 @@ p,h1 {
   border-bottom: 2px solid #050724;
 }
 .card-body {
-  max-height: 20rem;
+/*   max-height: 20rem; */
+  height: 20rem;
   overflow:scroll;
   padding: 20px;
+  min-height: 100px;
 }
 .card-footer {
   margin-top: 20px;
@@ -51,25 +53,29 @@ p,h1 {
   display: flex;
   justify-content:right;
 }
-.footer-btn1 {
-  margin-right: 1.5rem;
+.btn {
+  margin-right: .9rem;
   font-size: 20px;
   border-style: none;
   border-radius: 6px;
-  width: 50px;
-  background-color: #5bb6cd;
   position: relative;
   bottom: 10px;
+  color: white;
+}
+.footer-btn1 {
+  width:50px;
+  background-color: #5bb6cd;
+}
+.footer-btn1:hover,.footer-btn1:focus {
+  background-color: #458292;
+}
+.footer-btn2:hover,.footer-btn2:focus {
+ background-color: #a346af; 
 }
 .footer-btn2 {
-   font-size: 20px;
-  border-style: none;
-  border-radius: 6px;
-  width: 90px;
   background-color: #d55ce6;
-  margin-right: 8%;
-  position: relative;
-  bottom: 10px;
+  margin-right: 1%;
+  width: 100px;
 }
 @media only screen and (min-width: 600px) {
   .card {
